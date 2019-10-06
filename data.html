@@ -8,14 +8,14 @@
 
 <script>
 function myFunction() {
-var x1 = document.getElementById("college_address").value;
-    document.getElementById("mailing_address").innerHTML=x1;
-var x2 = document.getElementById("state_first").value;
-    document.getElementById("state_second").setAttribute("value", x2);
-var x3 = document.getElementById("pin_first").value;
-    document.getElementById("pin_second").setAttribute("value", x3); 
-var x4 = document.getElementById("tel_first").value;
-    document.getElementById("tel_second").setAttribute("value", x4);	
+var x1 = document.getElementById("email").value;
+    // document.getElementById("mailing_address").innerHTML=x1;
+var x2 = document.getElementById("name").value;
+    // document.getElementById("state_second").setAttribute("value", x2);
+var x3 = document.getElementById("message").value;
+    // document.getElementById("pin_second").setAttribute("value", x3); 
+var x4 = document.getElementById("phone").value;
+    // document.getElementById("tel_second").setAttribute("value", x4);	
 }
 $(document).ready(function(){
 	
@@ -23,76 +23,33 @@ $(document).ready(function(){
 
     $("#form_save").validate({
         rules: {
-            course_type: {
-                required: true
-            }, 
-			
-			course_name: {
-                required: true
-            }, 
-			
+  
 			name: {
                 required: true
             }, 
 			
-			dob: {
-                required: true
-            }, 
-			
-			category: {
-                required: true,
-				 minlength: 1
-            },
-			
-			
-			
-			college_address: {
-                required: true
-            }, 
-			state_first: {
-                required: true
-            }, 
-			
-			pin_first: {
-                required: true,
-				number: true
-            }, 
-			
-			tel_first: {
-                required: true
-            }, 
-			
-			mailing_address: {
-                required: true
-            },
-			
-			state_second: {
-                required: true
-            },
-			
-			pin_second: {
-                required: true,
-				number: true
-            },	
-			mobile_number: {
-                required: true,
-				laxEmail: true
-            },
 			email: {
-                required: true,
-				email: true
-            },
+                required: true
+            }, 
+			message: {
+                required: true
+            }, 
+		
+			phone: {
+                required: true
+            }, 
 			
         },
         messages: {
-            pin_first: {
+            phone: {
                 required: "this field is required",
                 number: "This is Invalid Pin"
-            }, pin_second: {
-                required: "this field is required",
-                number: "This is Invalid Pin"
-            },
+            }, 
             email: {
+                required: "Enter recipient email",
+                minlength: "Name should be at least {0} characters long" // <-- removed underscore
+            },
+            name: {
                 required: "Enter recipient name",
                 minlength: "Name should be at least {0} characters long" // <-- removed underscore
             }
@@ -124,7 +81,7 @@ $(document).ready(function(){
     e.preventDefault();
     });
 	jQuery.validator.addMethod("laxEmail", function(value) {
-	var inputtxt = document.getElementById("mobile_number").value;
+	var inputtxt = document.getElementById("phone").value;
 	return /^[789]\d{9}$/.test(inputtxt);
  }, "Please specify a valid phone number" );
 

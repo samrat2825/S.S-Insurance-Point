@@ -103,7 +103,8 @@
 </style>
 
 
-        <div class="container">
+       
+       <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -155,7 +156,7 @@
                                         <a href="Senior Citizen Health Insurance.html">Senior Citizen Health Insurance</a>
                                         <a href="Critical Illness Insurance.html">Critical Illness Insurance</a>
                                         <a href="Medical Policy.html">Medical Policy</a>
-                                      <!--   <a href="Health Insurance Claim.html">Health Insurance Claim</a> -->
+                                       <!--  <a href="Health Insurance Claim.html">Health Insurance Claim</a> -->
           
                                 </div>
                     </li>
@@ -165,7 +166,6 @@
 
                                         <a href="Car Insurance.html">Car Insurance</a>
                                         <a href="Third Party Insurance.html">Third Party Insurance</a>
-                                        <a href="Car Insurance Claim.html">Car Insurance Claim</a>
                                         <a href="Two Wheeler Insurance.html">Two Wheeler Insurance</a>
                                         <a href="Third Party Two Wheeler Insurance.html">Third Party Two Wheeler Insurance</a>
           
@@ -219,7 +219,7 @@
                                 <span><strong>Welcome to</strong>S.S.Insurance Point</span>
                             </h1>
                             <p class="animated2">Delhi's Largest Online Insurance Aggregator<br>Now At Your Service</p> 
-                            <a href="#feature" class="page-scroll btn btn-primary animated1">Read More</a>
+                            <a href="Life Insurance.html" class="page-scroll btn btn-primary animated1">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                               <span>One Stop<strong>For All Insurance</strong></span>
                             </h1>
                             <p class="animated2">Your One And Only Stop For All KINDS of Insurance<br></p>
-                            <a href="#feature" class="page-scroll btn btn-primary animated3">Read More</a>
+                            <a href="General Insurance.html" class="page-scroll btn btn-primary animated3">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                                 <span>Taalo Nahi <strong>Le Daalo</strong></span>
                             </h1>
                             <p class="animated1"><br></p>   
-                             <a class="animated3 slider btn btn-primary btn-min-block" href="#">Contact Us Now</a>
+                             <a class="animated3 slider btn btn-primary btn-min-block" href="#contact">Contact Us Now</a>
                              <!--<a class="animated3 slider btn btn-default btn-min-block" href="#">Live Demo</a>-->
                                 
                         </div>
@@ -268,7 +268,7 @@
         </div>
         <!-- /carousel -->
     </section>
-
+    <!-- End Home Page Slider -->
 
     <div class="breadcrum_rating policy_wrapper" >
     
@@ -1353,7 +1353,8 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>                </div>
+<p>&nbsp;</p>             
+   </div>
                 </span></span>            </div>
         </article>
     </span></span>
@@ -1363,10 +1364,7 @@
         </div>        
                     </section>
     <div class="clearfix"></div>
-
-
-
-
+</div></div>
 
 <section id="contact" class="contact">
         <div class="container">
@@ -1409,6 +1407,7 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
             <div class="row">
@@ -1434,11 +1433,7 @@
                 </div>
             </div>
         </div>
-<div class="footer">
-    <div class="h2"><center><font color="white">Help us spread the Word</font></center></div>
-    <div class="h4"><center><font color="white">Follow, like, tweet or post. We Would love to interact with you</font></center></div>
-</div>
-<footer class="style-1">
+        <footer class="style-1">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
@@ -1447,18 +1442,30 @@
                     <div class="col-md-4 col-xs-12">
                         <div class="footer-social text-center">
                             <ul>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/ssinsurancepoint/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/ssinsurancepoint-119158912821348/"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/SSINSURANCEPOI1"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ss-insurance-point-b51a9a194/"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="footer-link">
+                            <ul class="pull-right">
+                                <li><a href="#">Privacy Policy</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+    </section>
 
-<div id="loader">
+
+
+
+    <div id="loader">
         <div class="spinner">
             <div class="dot1"></div>
             <div class="dot2"></div>
@@ -1466,6 +1473,89 @@
     </div>
 
     
+    <script>
+function myFunction() {
+var x1 = document.getElementById("email").value;
+    // document.getElementById("mailing_address").innerHTML=x1;
+var x2 = document.getElementById("name").value;
+    // document.getElementById("state_second").setAttribute("value", x2);
+var x3 = document.getElementById("message").value;
+    // document.getElementById("pin_second").setAttribute("value", x3); 
+var x4 = document.getElementById("phone").value;
+    // document.getElementById("tel_second").setAttribute("value", x4); 
+}
+$(document).ready(function(){
+    
+
+
+    $("#form_save").validate({
+        rules: {
+  
+            name: {
+                required: true
+            }, 
+            
+            email: {
+                required: true
+            }, 
+            message: {
+                required: true
+            }, 
+        
+            phone: {
+                required: true
+            }, 
+            
+        },
+        messages: {
+            phone: {
+                required: "this field is required",
+                number: "This is Invalid Pin"
+            }, 
+            email: {
+                required: "Enter recipient email",
+                minlength: "Name should be at least {0} characters long" // <-- removed underscore
+            },
+            name: {
+                required: "Enter recipient name",
+                minlength: "Name should be at least {0} characters long" // <-- removed underscore
+            }
+        },
+        submitHandler: function (form) { // for demo
+            $('#myModal').modal('show'); // for demo
+            return false;  // for demo
+        }
+        
+    });
+
+    $("#fsubmit").click(function(e){
+
+        var i;
+        var url = "data.php"; // the script where you handle the form input.
+   
+        $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#form_save").serialize(), // serializes the form's elements.
+           success: function(data)   
+           { 
+           
+            var obj = JSON.parse(data);
+            window.location="./cnf.php";
+            }
+ });
+
+    e.preventDefault();
+    });
+    jQuery.validator.addMethod("laxEmail", function(value) {
+    var inputtxt = document.getElementById("phone").value;
+    return /^[789]\d{9}$/.test(inputtxt);
+ }, "Please specify a valid phone number" );
+
+
+ 
+});
+</script>
 
     <!-- jQuery Version 2.1.1 -->
     <script src="js/jquery-2.1.1.min.js"></script>
@@ -1489,5 +1579,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/script.js"></script>
+
+
 </body>
+
 </html>
